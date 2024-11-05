@@ -87,3 +87,37 @@ body {
 .nav__close{
     display: var(--show, none);
 }
+
+.hero__container{
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 2opx;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/* About */
+
+.about{
+    text-align: center;
+}
