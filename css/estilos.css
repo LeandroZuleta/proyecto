@@ -107,6 +107,7 @@ body {
 }
 
 .cta{
+    margin-top: 15px;
     display: inline-block;
     background-color: #2091F9;
     justify-self: center;
@@ -125,6 +126,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
     padding: 20px;
     margin: 20px;
+    margin-left: 65px;
     background-color: #f9f9f9;
 }
 
@@ -390,6 +392,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 .questions__show{
     text-align: left;
     height: 0;
+    transition: height .3s;
 }
 
 .questions__img{
