@@ -50,6 +50,7 @@ body {
     align-items: center;
 }
 
+
 .nav__title{
     font-weight: 300;
 }
@@ -73,6 +74,7 @@ body {
 }
 
 .nav__menu{
+    color: white;
     margin-left: auto;
     cursor: pointer;
     display: none;
@@ -88,34 +90,37 @@ body {
     display: var(--show, none);
 }
 
-.hero__container{
+/* about */
+
+.hero__container {
     max-width: 800px;
     --padding-container: 0;
     display: grid;
     grid-auto-rows: max-content;
+    align-content: center;
     gap: 1em;
     padding-bottom: 100px;
     text-align: center;
 }
 
-.hero__title{
+.hero__title {
     font-size: 3rem;
 }
 
-.hero__paragraph{
+.hero__paragraph {
     margin-bottom: 20px;
 }
 
-.cta{
-    margin-top: 15px;
+.cta {
     display: inline-block;
     background-color: #2091F9;
     justify-self: center;
     color: #fff;
     text-decoration: none;
-    padding: 13px 20px;
+    padding: 13px 30px;
     border-radius: 32px;
 }
+
 
 /* About */
 
@@ -559,5 +564,80 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     width: 30px;
 }
 
-/* media querys */
+/* Media queries */
 
+
+@media screen and (max-width: 768px) {
+    .about {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .about__main {
+        width: 100%;
+        gap: 1em;
+        grid-template-columns: 1fr; 
+
+   
+}
+
+@media (max-width:800px){
+    .nav__menu{
+        display: block;
+    }
+
+    .img__logo{
+        height: 70px;
+    }
+
+    .nav__link--menu{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .about__main{
+        gap: 2em;
+    }
+
+    .about__icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    .slide-content {
+        height: 100%;
+    }
+    
+
+}
+
+}

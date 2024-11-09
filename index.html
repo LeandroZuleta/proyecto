@@ -12,7 +12,7 @@
     <header class="hero">
         <nav class="nav container">
             <div class="nav__logo">
-                <h2 class="nav__title">Airconst</h2>
+                <img src="./images/airconst.png" class="img__logo" height="100px">
             </div>
             
             <ul class="nav__link nav__link--menu">
@@ -20,23 +20,23 @@
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Acerca De</a>
+                    <a href="#" class="nav__links">Sobre nosotros</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#" class="nav__links">servicios</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Iniciar Sesión</a>
+                    <a href="login.html" target="_blank" class="nav__links">Iniciar Sesión</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Registrarse</a>
+                    <a href="Registro.html" target="_blank" class="nav__links">Registrarse</a>
                 </li>
     
-                <img src="img/close.svg" alt="cerrar" class="nav__close">
+                <img src="./images/close.svg" alt="cerrar" class="nav__close">
             </ul>
     
             <div class="nav__menu">
-                <img src="img/menu.svg" alt="menu de navegacion" class="nav__img">
+                <img src="./images/menu.svg" alt="menu de navegacion" class="nav__img">
             </div>
         </nav>
     
@@ -47,33 +47,38 @@
                 
             <a href="#" class="cta">Llama ahora</a>
         </section>
+
+        <section class="register">
+            <button id="logout">Cerrar Sesión</button>
+        </section>
     </header>
     
     <main>
         <section class="container about">
+        <div class="messi">
             <h2 class="subtitle">¿Que es airconst?</h2>
-            <p class="about paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Harum repudiandae laboriosam voluptates qui dolorem suscipit nihil, obcaecati tempora ducimus at debitis ipsum maiores saepe asperiores cumque unde exercitationem nobis quis!</p>
-              
-            <div class="about__main">
+            <p class="about paragraph">Somos una empresa especializada en sistemas de climatización, ofreciendo soluciones de instalación y mantenimiento para hogares y negocios.</p>
+              <div class="about__main">
+           
                     <article class="about__icons">
                         <h3 class="about__title">Quienes somos</h3>
-                        <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis, magni beatae nihil</p>
+                        <p class="about__paragraph">Somos una empresa especializada en sistemas de climatización, ofreciendo soluciones de instalación y mantenimiento para hogares y negocios.</p>
                         <img src="C:\Users\cazgc\Desktop\proyecto\images\aire4.jpg" class="about__icon" height="200px" width="180px">
                     </article>
 
                     <article class="about__icons">
                         <h3 class="about__title">Mision</h3>
-                        <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis, magni beatae nihil </p>
+                        <p class="about__paragraph">Brindar servicios de climatización de alta calidad, garantizando confort, con un enfoque en la satisfacción y el bienestar de nuestros clientes.</p>
                         <img src="C:\Users\cazgc\Desktop\proyecto\images\aire2.jpg" class="about__icon" height="200px" width="180px">
                     </article>
                     
                     <article class="about__icons">
                         <h3 class="about__title">Vision</h3>
-                        <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis, magni beatae nihil</p>
+                        <p class="about__paragraph">Ser la empresa líder en climatización, destacándonos por soluciones innovadoras y sostenibles que mejoren la calidad de vida de nuestros clientes.</p>
                         <img src="C:\Users\cazgc\Desktop\proyecto\images\aire3.jpg" class="about__icon" height="200px" width="180px">
                     </article>
             </div>
+        </div>
         </section>
 
         <section class="knowledge">
@@ -280,6 +285,8 @@
 
 
     <script src="./js/questions.js"></script>
-
+    <script src="./js/menu.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/register.js"></script>
 </body>
 </html>
